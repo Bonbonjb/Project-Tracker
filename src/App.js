@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import '@testing-library/jest-dom';
+import logo from "./logo.svg";
+import "./App.css";
+import React from 'react';
+import ProjectTracker from '.src/components/ProjectTracker';
+import utils from './src/utils';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Project Management Tracker</h1>
       </header>
+      <main>
+        <ProjectTracker />
+      </main>
     </div>
   );
 }
